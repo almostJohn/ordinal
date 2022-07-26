@@ -7,7 +7,6 @@ interface Suffix {
   other: string;
 }
 
-/* originally I would use export function but this is more like a template*/
 function ordinal(count: number) {
   const pluralRules = new Intl.PluralRules('en', {
     type: 'ordinal',
@@ -20,6 +19,6 @@ function ordinal(count: number) {
     other: 'th',
   }
 
-  const ordinalExt = suffixes[pluralRules.select(count)];
-  return (count + ordinalExt);
+  const extension = suffixes[pluralRules.select(count)];
+  return (count + extension);
 }
