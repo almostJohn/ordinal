@@ -20,5 +20,5 @@ export function ordinal(count: number) {
   }
 
   const extension = suffixes[pluralRules.select(count)];
-  return (count + extension);
+  return (count + extension!);
 }
