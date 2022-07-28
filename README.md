@@ -24,6 +24,7 @@ client.on('guildMemberAdd', (member) => {
 		.setColor('RANDOM')
 		.setTitle('Example embed title')
 		.setDescription(`Member joined, you are the ${ordinal(member.guild.memberCount)} member.`)
+		.setFooter({ text: 'Example embed footer' })
 		.setTimestamp();
 });
 ```
@@ -44,6 +45,7 @@ client.on('guildMemberAdd', (member: GuildMember) => {
 		color: 'RANDOM',
 		title: 'Example embed title',
 		description: `Member joined, you are the ${ordinal(member.guild.memberCount)} member.`,
+		footer: { text: 'Example embed footer' },
 		timestamp: new Date().toISOString(),
 	};
 });
