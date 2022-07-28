@@ -49,6 +49,39 @@ client.on('guildMemberAdd', (member: GuildMember) => {
 });
 ```
 
+#### Actual Testing
+
+`TypeScript`
+
+```js
+interface Suffix {
+    zero?: string;
+    one: string;
+    two: string;
+    few: string;
+    many?: string;
+    other: string;
+}
+
+function ordinal(count: number) {
+    const pluralRules = new Intl.PluralRules('en', {
+        type: 'ordinal',
+    });
+
+    const suffixes: Suffix = {
+        one: 'st',
+        two: 'nd',
+        few: 'rd',
+        other: 'th',
+    }
+
+    const extension = suffixes[pluralRules.select(count)];
+    return (count + extension!);
+}
+
+console.log(ordinal(100)); // 100th
+```
+
 #### Resulting Code
 
 As you can see here, we use a powerful library [discord.js](http://discord.js.org/) of [Node.js](https://nodejs.org/en/), you'll see that we pass in the parameter of `ordinal()` function `member.guild.memberCount` because it returns a number, and `ordinal()` function will only work to a returning number in any code base or functions.
