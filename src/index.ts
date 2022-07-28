@@ -7,7 +7,7 @@ interface Suffix {
   other: string;
 }
 
-function ordinal(count: number) {
+export function ordinal(count: number) {
   const pluralRules = new Intl.PluralRules('en', {
     type: 'ordinal',
   });
