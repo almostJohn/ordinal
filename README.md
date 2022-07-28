@@ -8,6 +8,9 @@ Formats the number and return with an extension.
 | --------- | ----   | ----------- |
 | `count`   | number | The number to format |
 
+### Returns
+[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 ### Example Usage
 
 ```js
