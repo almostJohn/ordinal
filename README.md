@@ -13,7 +13,7 @@ Returns a number with an additional extension, eg: `1st`, `2nd`, `3rd`, and so o
 ```js
 const { Client, Intents, MessageEmbed } = require('discord.js');
 
-const ordinal = require('./src/index');
+const { ordinal } = require('./src/index');
 
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS],
