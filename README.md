@@ -1,12 +1,12 @@
 # ordinal
 
-Formats the number and return in ordinal type.
+Transform the number into ordinal type.
 
 ### Parameters
 
 | PARAMETER | TYPE   | DESCRIPTION |
 | --------- | ----   | ----------- |
-| `count`   | number | The number to format |
+| `count`   | number | The number to transform |
 
 ### Returns
 [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
