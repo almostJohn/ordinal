@@ -1,6 +1,6 @@
 # ordinal
 
-Formats the number and return with an extension.
+Formats the number and return in ordinal type.
 
 ### Parameters
 
