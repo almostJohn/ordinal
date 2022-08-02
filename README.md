@@ -2,16 +2,16 @@
 
 Transform the number into ordinal type.
 
-### Parameters
+## Parameters
 
 | PARAMETER | TYPE   | DESCRIPTION |
 | --------- | ----   | ----------- |
 | `count`   | number | The number to transform |
 
-### Returns
+## Returns
 [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### Example Usage
+## Example Usage
 
 ```js
 console.log(ordinal(100)); // -> 100th
