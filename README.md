@@ -14,5 +14,5 @@ Transform the number into ordinal type.
 ## Example Usage
 
 ```js
-console.log(ordinal(100)); // -> 100th
+console.log(ordinal(100)); // 100th
 ```
