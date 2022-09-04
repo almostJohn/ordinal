@@ -7,7 +7,7 @@ interface Suffix {
   other: string;
 }
 
-export function ordinal(count: number) {
+export function ordinal(total: number) {
   const pluralRules = new Intl.PluralRules('en', {
     type: 'ordinal',
   });
@@ -19,6 +19,6 @@ export function ordinal(count: number) {
     other: 'th',
   }
 
-  const extension = suffixes[pluralRules.select(count)];
-  return (count + extension!);
+  const extension = suffixes[pluralRules.select(total)];
+  return (total + extension!);
 }
